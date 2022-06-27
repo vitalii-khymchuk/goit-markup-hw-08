@@ -1,0 +1,47 @@
+.team {
+  background-color: $secondary-background-color;
+}
+
+.team__header {
+  @include text-prop(700, 36px, 1.16, null);
+  text-align: center;
+  color: $primary-main-color;
+
+  margin-bottom: 50px;
+}
+
+.team__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $secondary-main-color;
+
+  flex-basis: calc((100% - 90px) / 4);
+
+  & + & {
+    margin-left: $typical-margine;
+  }
+}
+
+.member-card__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.member-card__name {
+  @include text-prop(500, 16px, 1.19, null);
+  text-align: center;
+  color: $primary-main-color;
+}
+
+.member-card__position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,32 @@
+.advantages {
+  padding-bottom: 0;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  flex-basis: calc((100% - 90px) / 4);
+  & + & {
+    margin-left: $typical-margine;
+  }
+}
+
+.advantages__svg-wrapper {
+  height: 120px;
+  width: 100%;
+  background-color: #f5f4fa;
+  @include flex-centre();
+
+  margin-bottom: 30px;
+}
+
+.advantages__header {
+  @include text-prop(700, 14px, 1.14, null);
+  text-transform: uppercase;
+  color: $primary-main-color;
+
+  margin-bottom: 10px;
+}

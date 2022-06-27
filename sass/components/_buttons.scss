@@ -1,0 +1,18 @@
+.buttons {
+ @include flex-centre();
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  @include text-prop(700, 16px, 1.88, 00.06em);
+
+  color: $secondary-main-color;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+      0px 3px 1px 0px #0000001a;
+  }
+}

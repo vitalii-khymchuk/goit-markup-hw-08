@@ -1,0 +1,19 @@
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @include flex-centre();
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-color: $secondary-main-color;
+  transition: $typical-transition;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}

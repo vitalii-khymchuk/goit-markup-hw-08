@@ -1,0 +1,25 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__item {
+  color: #afb1b8;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition: $typical-transition;
+  flex-basis: calc((100% - 150px) / 6);
+
+  & + & {margin-left: $typical-margine;}
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.clients__link {
+  @include flex-centre();
+  height: 92px;
+  width: 100%;
+}

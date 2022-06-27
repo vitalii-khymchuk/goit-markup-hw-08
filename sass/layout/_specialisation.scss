@@ -1,0 +1,25 @@
+.specialisation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialisation__item {
+  flex-basis: calc((100% - 90px) / 4);
+  position: relative;
+
+  & + & {margin-left: $typical-margine;}
+}
+
+.specialisation__text-wrapper {
+  position: absolute;
+  bottom: 0;
+
+  @include flex-centre();
+  width: 100%;
+  height: 70px;
+
+  text-transform: uppercase;
+  @include text-prop(700, 14px, 1.14, 00.03em);
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

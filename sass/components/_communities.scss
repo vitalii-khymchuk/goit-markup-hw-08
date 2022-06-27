@@ -1,0 +1,39 @@
+.communities {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  width: 206px;
+
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.communities__item {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  @include flex-centre();
+  color: #afb1b8;
+  transition: $typical-transition;
+
+  &--light {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $secondary-main-color;
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $secondary-main-color;
+    background-color: $accent-color;
+  }
+}
+
+.communities__icon {
+  display: block;
+  fill: currentColor;
+}
