@@ -1,21 +1,24 @@
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .card {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  // flex-basis: calc((100% - 60px) / 3);
+  // margin-top: 30px;
+  // margin-left: 30px;
 
-  transition: $typical-transition;
+  // transition: $typical-transition;
 
-  &:nth-child(-n + 3) {
-    margin-top: 0;
-  }
+  // &:nth-child(-n + 3) {
+  //   margin-top: 0;
+  // }
 
-  &:nth-child(3n + 1) {
-    margin-left: 0;
+  // &:nth-child(3n + 1) {
+  //   margin-left: 0;
+  // }
+  &:not(:last-child) {
+    margin-bottom: $typical-margine;
   }
 
   &:hover,
@@ -28,6 +31,10 @@
 .card__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
 }
 
 .card__overlay-text {

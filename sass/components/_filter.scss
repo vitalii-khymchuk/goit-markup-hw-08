@@ -1,10 +1,15 @@
 .filter {
-  @include flex-centre();
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: $typical-margine;
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+.filter__item {
+  margin-bottom: 15px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter__buttons {

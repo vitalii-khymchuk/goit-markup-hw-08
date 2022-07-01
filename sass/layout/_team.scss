@@ -11,8 +11,8 @@
 }
 
 .team__cards {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .member-card {
@@ -21,16 +21,28 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $secondary-main-color;
 
-  flex-basis: calc((100% - 90px) / 4);
-
-  & + & {
-    margin-left: $typical-margine;
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: $typical-margine;
+    }
   }
+
+  // flex-basis: calc((100% - 90px) / 4);
+
+  // & + & {
+  //   margin-left: $typical-margine;
+  // }
 }
 
 .member-card__text {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.member-card__photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .member-card__name {

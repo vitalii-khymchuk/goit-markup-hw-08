@@ -1,3 +1,9 @@
+.specialisation {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .specialisation__list {
   display: flex;
   justify-content: space-between;
@@ -7,7 +13,9 @@
   flex-basis: calc((100% - 90px) / 4);
   position: relative;
 
-  & + & {margin-left: $typical-margine;}
+  & + & {
+    margin-left: $typical-margine;
+  }
 }
 
 .specialisation__text-wrapper {

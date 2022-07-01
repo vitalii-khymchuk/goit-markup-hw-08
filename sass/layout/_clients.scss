@@ -1,5 +1,7 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
   justify-content: space-between;
 }
 
@@ -8,9 +10,11 @@
   border: 1px solid currentColor;
   border-radius: 4px;
   transition: $typical-transition;
-  flex-basis: calc((100% - 150px) / 6);
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
 
-  & + & {margin-left: $typical-margine;}
+  // & + & {
+  //   margin-left: $typical-margine;
 
   &:hover,
   &:focus {

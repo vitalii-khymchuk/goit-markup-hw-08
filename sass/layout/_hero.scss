@@ -4,26 +4,27 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/images-main-page/hero-img.jpg);
-  max-height: 600px;
-  max-width: 1600px;
+    url(../images/images-main-page/hero-img-mobile.jpg);
+  max-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-
+  background-position-x: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  @include flex-centre;
 }
 
 .hero__header {
-  @include text-prop(900, 44px, 1.36, 0.06em);
+  @include text-prop(900, 24px, 1.62, 0.06em);
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
   color: $secondary-main-color;
 
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
 }
 

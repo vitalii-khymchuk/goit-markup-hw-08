@@ -22,21 +22,19 @@
     <!-- HEADER -->
 
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
+        <a href="./index.html" class="logo link"
+          >Web<span class="logo__part logo__part">Studio</span></a
+        >
         <nav class="nav">
-          <a href="./index.html" class="logo link"
-            >Web<span class="logo__part">Studio</span></a
-          >
           <ul class="list nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студия</a>
+              <a href="./index.html" class="nav__link"
+                >Студия</a
+              >
             </li>
             <li class="nav__item nav__item--current">
-              <a
-                href="./portfolio.html"
-                class="nav__link nav__link--current link"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="nav__link link nav__link--current link">Портфолио</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link link">Контакты</a>
@@ -61,6 +59,52 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-btn-mob">
+          <svg class="menu-btn-mob__icon" width="40px" height="40px">
+            <use href="./symbol-defs.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+        <div class="menu-mob is-hidden">
+           <button type="button" class="menu-mob__close-btn">
+          <svg width="40px" height="40px">
+            <use href="./symbol-defs.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+          <nav class="menu-mob__nav">
+          <ul class="menu-mob__top list">
+            <li class="menu-mob__item">
+              <a href="./index.html" class="menu-mob__link link"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-mob__item">
+              <a href="./portfolio.html" class="menu-mob__link menu-mob__link--current link">Портфолио</a>
+            </li>
+            <li class="menu-mob__item">
+              <a href="" class="menu-mob__link link">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu-mob__bottom">
+              <ul class="list">
+               <li class="menu-mob__mail">
+              <a href="mailto:info@devstudio.com" class="link">
+              info@devstudio.com
+              </a>
+            </li>
+            <li class="menu-mob__tel">
+              <a href="tel:+380961111111" class="link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            </ul>
+            <ul class="menu-mob__communities list">
+              <li class="menu-mob__communities-item"><a href="" class="link">Instagram</a></li>
+              <li class="menu-mob__communities-item"><a href="" class="link">Twitter</a></li>
+              <li class="menu-mob__communities-item"><a href="" class="link">Facebook</a></li>
+              <li class="menu-mob__communities-item"><a href="" class="link">LinkedIn</a></li>
+            </ul>
+        </div>
+          </div>
       </div>
     </header>
 
@@ -107,7 +151,7 @@
                   <img
                     src="./images/images-page-portfolio/img0.jpg"
                     alt="Страница сайта Технокряк"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -127,7 +171,7 @@
                   <img
                     src="./images/images-page-portfolio/img1.jpg"
                     alt="Баскетболисты играют"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -149,7 +193,7 @@
                   <img
                     src="./images/images-page-portfolio/img2.jpg"
                     alt="Лого ресторана Seafood"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -171,7 +215,7 @@
                   <img
                     src="./images/images-page-portfolio/img3.jpg"
                     alt="Наушники"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -193,7 +237,7 @@
                   <img
                     src="./images/images-page-portfolio/img4.jpg"
                     alt="Коробки"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -215,7 +259,7 @@
                   <img
                     src="./images/images-page-portfolio/img5.jpg"
                     alt=" Страница сайта Inspiration has no Borders"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -237,7 +281,7 @@
                   <img
                     src="./images/images-page-portfolio/img6.jpg"
                     alt="Открытая книга"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -259,7 +303,7 @@
                   <img
                     src="./images/images-page-portfolio/img7.jpg"
                     alt="Логотип проекта"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -279,7 +323,7 @@
                   <img
                     src="./images/images-page-portfolio/img8.jpg"
                     alt="Приложение Growing Business на ноутбуке"
-                    width="370"
+                    class="card__image"
                   />
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -383,5 +427,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

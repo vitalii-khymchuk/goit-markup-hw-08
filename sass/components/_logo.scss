@@ -1,8 +1,12 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  @include text-prop(700, 26px, 1.19, 00.03em);
+  @include text-prop(700, 24px, 1.16, 00.03em);
   color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    @include text-prop(700, 26px, 1.19, 00.03em);
+  }
 }
 
 .logo__part {

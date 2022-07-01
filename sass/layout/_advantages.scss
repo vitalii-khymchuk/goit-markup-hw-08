@@ -3,15 +3,17 @@
 }
 
 .advantages__list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
-  flex-basis: calc((100% - 90px) / 4);
-  & + & {
-    margin-left: $typical-margine;
-  }
+  // flex-basis: calc((100% - 90px) / 4);
+  // & + & {
+  //   margin-left: $typical-margine;
+  // }
 }
 
 .advantages__svg-wrapper {
@@ -29,4 +31,8 @@
   color: $primary-main-color;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
 }

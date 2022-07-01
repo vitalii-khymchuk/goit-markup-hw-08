@@ -1,11 +1,11 @@
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  min-height: 581px;
+  width: auto;
+  height: auto;
   padding: 40px;
 
   background-color: $secondary-main-color;
@@ -21,12 +21,15 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.2);
   }
+  @media screen and (max-width: 479px) {
+    margin: 94px 15px;
+  }
 }
 
 .modal__text {
   margin-bottom: 12px;
 
-  @include text-prop(700, 20px, 1.15, 0.03em);
+  @include text-prop(700, 20px, 1.5, 0.03em);
   text-align: center;
 
   color: $primary-main-color;
@@ -87,10 +90,11 @@
 
 .form__label-checkbox {
   margin-left: 23px;
+  @include text-prop(400, 12px, 1.16, 00.03em);
 }
 
 .form__field-checkbox {
-  margin-left: 13px;
+  // margin-left: 13px;
   position: relative;
   margin-bottom: $typical-margine;
 
