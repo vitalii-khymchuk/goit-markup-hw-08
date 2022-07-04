@@ -2,10 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: $typical-margine;
+  @include tab-pc {
+    justify-content: center;
+  }
 }
 
 .filter__item {
-  margin-bottom: 15px;
+  @include mob-only {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__item:not(:last-child) {

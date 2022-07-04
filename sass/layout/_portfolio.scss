@@ -1,6 +1,9 @@
 .cards {
-  // display: flex;
-  // flex-wrap: wrap;
+  @include tab-pc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .card {
@@ -18,7 +21,9 @@
   //   margin-left: 0;
   // }
   &:not(:last-child) {
-    margin-bottom: $typical-margine;
+    @include mob-only {
+      margin-bottom: $typical-margine;
+    }
   }
 
   &:hover,
@@ -28,9 +33,10 @@
   }
 }
 
-.card__thumb {
-  position: relative;
-  overflow: hidden;
+.card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card__image {
@@ -53,7 +59,13 @@
   }
 }
 
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
 .card__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

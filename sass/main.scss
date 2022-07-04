@@ -5,14 +5,15 @@
 @import "./utils/hidden";
 
 @import "./components/backdrop";
-@import "./components/_close-button";
+@import "./components/close-button";
 @import "./components/section";
 @import "./components/container";
-@import "./components/section-header";
 @import "./components/buttons";
 @import "./components/filter";
 @import "./components/communities";
 @import "./components/animations";
+@import "./components/mobile-menu";
+@import "./components/section-header";
 
 @import "./layout/header";
 @import "./components/logo";

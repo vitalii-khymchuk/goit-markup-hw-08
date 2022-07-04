@@ -1,4 +1,9 @@
 .section {
   padding-top: $padding-mob;
   padding-bottom: $padding-mob;
+
+  @include pc-only {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

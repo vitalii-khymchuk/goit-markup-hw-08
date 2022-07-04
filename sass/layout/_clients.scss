@@ -1,8 +1,16 @@
 .clients__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  @include tab-only {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include tab-only {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include pc-only {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .clients__item {
@@ -10,8 +18,7 @@
   border: 1px solid currentColor;
   border-radius: 4px;
   transition: $typical-transition;
-  margin: 15px;
-  flex-basis: calc((100% - 60px) / 2);
+  // width: calc((100% - 30px) / 2);
 
   // & + & {
   //   margin-left: $typical-margine;

@@ -6,6 +6,7 @@
     ),
     url(../images/images-main-page/hero-img-mobile.jpg);
   max-height: 400px;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -15,6 +16,9 @@
   margin-left: auto;
   margin-right: auto;
   @include flex-centre;
+  @include pc-only {
+    max-height: 600px;
+  }
 }
 
 .hero__header {
@@ -26,6 +30,11 @@
 
   max-width: 360px;
   margin-bottom: 30px;
+
+  @include pc-only {
+    @include text-prop(900, 44px, 1.36, 00.06em);
+    max-width: 696px;
+  }
 }
 
 .hero__button {

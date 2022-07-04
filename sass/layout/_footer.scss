@@ -6,8 +6,12 @@
 }
 
 .footer__container {
-  // display: flex;
   text-align: center;
+  @include tab-pc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+  }
 }
 
 .address {
@@ -36,7 +40,9 @@
   // width: 206px;
 
   // margin-left: 70px;
-  margin-top: 60px;
+  @include mob-only {
+    margin-top: 60px;
+  }
 }
 
 .footer__header {
@@ -50,15 +56,27 @@
 }
 
 .footer__subscribe {
+  @include mob-tab {
+    margin-top: 60px;
+  }
+
+  @include tab-only {
+    grid-column: 1/3;
+  }
   // margin-left: 93px;
-  margin-top: 60px;
 
   // width: 570px;
+  @include mob-only {
+    width: 100%;
+  }
+
+  @include tab-only {
+    width: 450px;
+    justify-self: center;
+  }
 }
 
 .subscribe-form {
-  // display: flex;
-  // align-items: flex-end;
   margin-top: 20px;
 }
 

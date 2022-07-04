@@ -1,7 +1,15 @@
 .container {
-  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   overflow: scroll;
+  @include mob-only {
+    max-width: 480px;
+  }
+  @include tab-only {
+    width: 768px;
+  }
+  @include pc-only {
+    width: 1200px;
+  }
 }

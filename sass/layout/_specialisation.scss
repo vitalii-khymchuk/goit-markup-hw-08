@@ -1,5 +1,5 @@
 .specialisation {
-  @media screen and (max-width: 480px) {
+  @include mob-tab {
     display: none;
   }
 }

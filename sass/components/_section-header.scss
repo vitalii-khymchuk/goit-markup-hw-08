@@ -1,7 +1,11 @@
 .section-header {
-  @include text-prop(700, 36px, 1.16, null);
+  @include text-prop(700, 28px, 1.17, 0.03em);
   text-align: center;
   color: $primary-main-color;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include pc-only {
+    @include text-prop(700, 36px, 1.16, 00.03em);
+    margin-bottom: 50px;
+  }
 }
