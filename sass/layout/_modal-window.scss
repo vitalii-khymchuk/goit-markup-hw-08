@@ -20,6 +20,10 @@
   @include mob-only {
     margin: 94px 15px;
   }
+
+  @include pc-only {
+    max-width: 528px;
+  }
 }
 
 .modal__text {
@@ -29,6 +33,9 @@
   text-align: center;
 
   color: $primary-main-color;
+  @include pc-only {
+    @include text-prop(null, null, 1.15, null);
+  }
 }
 
 .form__field {
@@ -85,16 +92,20 @@
 }
 
 .form__label-checkbox {
-  margin-left: 23px;
   @include text-prop(400, 12px, 1.16, 00.03em);
+  margin-left: 20px;
+  @include pc-only {
+    @include text-prop(400, 14px, 1.17, null);
+  }
 }
 
 .form__field-checkbox {
-  // margin-left: 13px;
   position: relative;
   margin-bottom: $typical-margine;
 
-  @include flex-centre();
+  @include pc-only {
+    margin-left: 12px;
+  }
 }
 
 .form__link-checkbox {

@@ -11,6 +11,7 @@
 
 .specialisation__item {
   flex-basis: calc((100% - 90px) / 4);
+  flex-grow: 1;
   position: relative;
 
   & + & {

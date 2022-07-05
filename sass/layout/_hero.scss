@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/images-main-page/hero-img-mobile.jpg);
+    url(../images/images-main-page/hero-bg-mob-1x.jpg);
   max-height: 400px;
   max-width: 1600px;
   background-repeat: no-repeat;
@@ -16,8 +16,41 @@
   margin-left: auto;
   margin-right: auto;
   @include flex-centre;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images-main-page/hero-bg-mob-2x.jpg);
+  }
+  @include tab-only {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images-main-page/hero-bg-tab-1x.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/images-main-page/hero-bg-tab-2x.jpg);
+    }
+  }
   @include pc-only {
     max-height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images-main-page/hero-bg-pc-1x.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/images-main-page/hero-bg-pc-2x.jpg);
+    }
   }
 }
 
