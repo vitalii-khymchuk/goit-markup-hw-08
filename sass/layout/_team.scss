@@ -31,12 +31,6 @@
   padding-bottom: 30px;
 }
 
-.member-card__photo {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 .member-card__name {
   @include text-prop(500, 16px, 1.19, null);
   text-align: center;
