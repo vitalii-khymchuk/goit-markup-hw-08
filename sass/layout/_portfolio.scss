@@ -4,6 +4,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+  @include pc-only {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .card {
