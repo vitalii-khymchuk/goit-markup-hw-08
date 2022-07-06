@@ -25,16 +25,18 @@
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo link"
-          >Web<span class="logo__part logo__part">Studio</span></a
-        >
+            >Web<span class="logo__part logo__part">Studio</span></a
+          >
           <ul class="list nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link"
-                >Студия</a
-              >
+              <a href="./index.html" class="nav__link link">Студия</a>
             </li>
             <li class="nav__item nav__item--current">
-              <a href="./portfolio.html" class="nav__link link nav__link--current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="nav__link link nav__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link link">Контакты</a>
@@ -59,52 +61,65 @@
             </li>
           </ul>
           <button type="button" class="menu-mob__open-btn">
-          <svg class="menu-btn-mob__icon" width="40px" height="40px">
-            <use href="./symbol-defs.svg#icon-menu-mob"></use>
-          </svg>
-        </button>
+            <svg class="menu-btn-mob__icon" width="40px" height="40px">
+              <use href="./symbol-defs.svg#icon-menu-mob"></use>
+            </svg>
+          </button>
         </nav>
         <div class="menu-mob is-hidden">
-           <button type="button" class="menu-mob__close-btn">
-          <svg width="40px" height="40px">
-            <use href="./symbol-defs.svg#icon-close-mob"></use>
-          </svg>
-        </button>
-          <nav class="menu-mob__nav">
-          <ul class="menu-mob__top list">
-            <li class="menu-mob__item">
-              <a href="./index.html" class="menu-mob__link link menu-mob__link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="menu-mob__item">
-              <a href="./portfolio.html" class="menu-mob__link link">Портфолио</a>
-            </li>
-            <li class="menu-mob__item">
-              <a href="" class="menu-mob__link link">Контакты</a>
-            </li>
-          </ul>
-          <div class="menu-mob__bottom">
+          <button type="button" class="menu-mob__close-btn">
+            <svg width="40px" height="40px">
+              <use href="./symbol-defs.svg#icon-close-mob"></use>
+            </svg>
+          </button>
+          <div class="menu-mob__nav">
+            <ul class="menu-mob__top list">
+              <li class="menu-mob__item">
+                <a
+                  href="./index.html"
+                  class="menu-mob__link link menu-mob__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu-mob__item">
+                <a href="./portfolio.html" class="menu-mob__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-mob__item">
+                <a href="" class="menu-mob__link link">Контакты</a>
+              </li>
+            </ul>
+            <div class="menu-mob__bottom">
               <ul class="list">
-                 <li class="menu-mob__tel">
-              <a href="tel:+380961111111" class="link">
-                +38 096 111 11 11
-              </a>
-            </li>
-               <li class="menu-mob__mail">
-              <a href="mailto:info@devstudio.com" class="link">
-              info@devstudio.com
-              </a>
-            </li>
-            </ul>
-            <ul class="menu-mob__communities list">
-              <li class="menu-mob__communities-item"><a href="" class="link">Instagram</a></li>
-              <li class="menu-mob__communities-item"><a href="" class="link">Twitter</a></li>
-              <li class="menu-mob__communities-item"><a href="" class="link">Facebook</a></li>
-              <li class="menu-mob__communities-item"><a href="" class="link">LinkedIn</a></li>
-            </ul>
-        </div>
+                <li class="menu-mob__tel">
+                  <a href="tel:+380961111111" class="link">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="menu-mob__mail">
+                  <a href="mailto:info@devstudio.com" class="link">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu-mob__communities list">
+                <li class="menu-mob__communities-item">
+                  <a href="" class="link">Instagram</a>
+                </li>
+                <li class="menu-mob__communities-item">
+                  <a href="" class="link">Twitter</a>
+                </li>
+                <li class="menu-mob__communities-item">
+                  <a href="" class="link">Facebook</a>
+                </li>
+                <li class="menu-mob__communities-item">
+                  <a href="" class="link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
       </div>
     </header>
 
@@ -149,21 +164,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-1-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-1-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-1-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-1-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-1-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-1-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-1-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-1-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-1-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-1-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-1-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-1-mob-1x.jpg"
-                    height="294"
-                    alt="Страница сайта Технокряк"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-1-mob-1x.jpg"
+                      height="294"
+                      alt="Страница сайта Технокряк"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -181,21 +208,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-2-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-2-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-2-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-2-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-2-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-2-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-2-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-2-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-2-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-2-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-2-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-2-mob-1x.jpg"
-                    height="294"
-                    alt="Баскетболисты играют"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-2-mob-1x.jpg"
+                      height="294"
+                      alt="Баскетболисты играют"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -214,22 +253,34 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__thumb">
-                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-3-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-3-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-3-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-3-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-3-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-3-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-3-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-3-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-3-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-3-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-3-mob-1x.jpg"
-                    height="294"
-                    alt="Лого ресторана Seafood"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-3-mob-1x.jpg"
+                      height="294"
+                      alt="Лого ресторана Seafood"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -249,21 +300,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-4-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-4-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-4-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-4-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-4-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-4-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-4-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-4-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-4-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-4-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-4-mob-1x.jpg"
-                    height="294"
-                    alt="Наушники"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-4-mob-1x.jpg"
+                      height="294"
+                      alt="Наушники"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -283,21 +346,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-5-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-5-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-5-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-5-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-5-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-5-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-5-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-5-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-5-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-5-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-5-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-5-mob-1x.jpg"
-                    height="294"
-                    alt="Коробки"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-5-mob-1x.jpg"
+                      height="294"
+                      alt="Коробки"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -316,22 +391,34 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__thumb">
-                 <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-6-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-6-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-6-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-6-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-6-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-6-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-6-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-6-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-6-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-6-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-6-mob-1x.jpg"
-                    height="294"
-                    alt="Страница сайта Inspiration has no Borders"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-6-mob-1x.jpg"
+                      height="294"
+                      alt="Страница сайта Inspiration has no Borders"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -351,21 +438,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-7-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-7-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-7-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-7-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-7-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-7-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-7-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-7-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-7-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-7-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-7-mob-1x.jpg"
-                    height="294"
-                    alt="Открытая книга"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-7-mob-1x.jpg"
+                      height="294"
+                      alt="Открытая книга"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -385,21 +484,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-8-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-8-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-8-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-8-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-8-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-8-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-8-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-8-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-8-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-8-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-8-mob-1x.jpg"
-                    height="294"
-                    alt="Логотип проекта"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-8-mob-1x.jpg"
+                      height="294"
+                      alt="Логотип проекта"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -417,21 +528,33 @@
               <a href="" class="card__link link">
                 <div class="card__thumb">
                   <picture>
-                    <source srcset="./images/images-page-portfolio/portfolio-9-pc-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-9-pc-2x.jpg 2x"
-                    media="(min-width: 1200px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-9-tab-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-9-tab-2x.jpg 2x"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/images-page-portfolio/portfolio-9-mob-1x.jpg 1x,
-                    ./images/images-page-portfolio/portfolio-9-mob-2x.jpg 2x"
-                    media="(min-width: 200px)">
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-9-pc-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-9-pc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-9-tab-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/images-page-portfolio/portfolio-9-mob-1x.jpg 1x,
+                        ./images/images-page-portfolio/portfolio-9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 200px)"
+                    />
                     <img
-                    src="./images/images-page-portfolio/portfolio-9-mob-1x.jpg"
-                    height="294"
-                    alt="Приложение Growing Business на ноутбуке"
-                    class="card__image"
-                  />
+                      src="./images/images-page-portfolio/portfolio-9-mob-1x.jpg"
+                      height="294"
+                      alt="Приложение Growing Business на ноутбуке"
+                      class="card__image"
+                    />
                   </picture>
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
